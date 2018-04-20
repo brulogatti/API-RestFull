@@ -14,7 +14,7 @@
 	</welcome-file-list>
 
 <servlet>
-<servlet-name>Jersey REST Exercicio2  Service</servlet-name>
+<servlet-name>Jersey REST Exercicio2 Service</servlet-name>
 <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 <init-param>
 <param-name>com.sun.jersey.config.property.packages</param-name>
@@ -25,7 +25,7 @@
 
 <servlet-mapping>
 <servlet-name>Jersey REST Exercicio2 Service</servlet-name>
-<url-pattern>/rest</url-pattern>
+<url-pattern>/rest/*</url-pattern>
 </servlet-mapping>
 
 </web-app>
