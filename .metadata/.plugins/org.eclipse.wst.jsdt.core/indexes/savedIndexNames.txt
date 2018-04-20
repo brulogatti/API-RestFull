@@ -1,0 +1,4 @@
+INDEX VERSION 1.4+/home/bruna/Documentos/Sistemas Distribuídos/P2/API Restfull/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2274746109.index
+4036161131.index
+3298824371.index

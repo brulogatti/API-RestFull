@@ -1,0 +1,20 @@
+INDEX VERSION 1.130+/home/bruna/Documentos/Sistemas Distribuídos/P2/API Restfull/.metadata/.plugins/org.eclipse.jdt.core
+2022014242.index
+1132933390.index
+3245640438.index
+682160478.index
+2043442652.index
+1423489980.index
+2654462167.index
+4036161131.index
+2454111553.index
+2336151826.index
+2743471115.index
+2819457427.index
+438184077.index
+3298824371.index
+549590969.index
+1926944153.index
+721304171.index
+1850416144.index
+612631803.index
