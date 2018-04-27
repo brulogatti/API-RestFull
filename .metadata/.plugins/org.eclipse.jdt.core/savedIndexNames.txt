@@ -15,6 +15,7 @@ INDEX VERSION 1.130+/home/bruna/Documentos/Sistemas Distribuídos/P2/API Restful
 1689082527.index
 3245640438.index
 1926944153.index
+4023221566.index
 1694563588.index
 1423489980.index
 2274746109.index
@@ -26,8 +27,8 @@ INDEX VERSION 1.130+/home/bruna/Documentos/Sistemas Distribuídos/P2/API Restful
 2985611374.index
 78178988.index
 2743471115.index
-612631803.index
 351583724.index
+612631803.index
 632628527.index
 2022014242.index
 3598513422.index

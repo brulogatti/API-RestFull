@@ -1,0 +1,84 @@
+package br.com.rest.ex3;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+
+import com.mysql.jdbc.Statement;
+
+@Path("/imc")
+public class Imc {
+	
+	//http://localhost:8080/Exercicio3/rest/imc/calcular/Bruna/22/60/1.60
+	
+	@GET
+	@Path("calcular/{param1}/{param2}/{param3}/{param4}")
+	public String calcular(@PathParam ("param1") String nome,  @PathParam ("param2") int idade, @PathParam ("param3") double peso, @PathParam ("param4") double altura) {
+		double imc = peso/(altura*altura);
+		String imce="";
+		imce=String.valueOf(imc);
+		try {
+		Connection con = new Imc().getConnection();
+		// cria um preparedStatement
+		
+		String sqltable = "CREATE TABLE IMC " +
+                "(nome INTEGER, " +
+                " idade INTEGER, " + 
+                " peso DOUBLE, " + 
+                " altura DOUBLE )"; 
+
+		Statement stmt = null;
+		
+		stmt.executeUpdate(sqltable);
+		
+		System.out.println("Created table in given database...");
+		
+        String sql = "INSERT INTO IMC" +
+                " (nome,idade,peso,altura)" +
+                " VALUES (?,?,?,?)";
+        PreparedStatement stmt2 = con.prepareStatement(sql);
+
+        // preenche os valores
+        stmt2.setString(1, nome);
+        stmt2.setInt(2, idade);
+        stmt2.setDouble(3, peso);
+        stmt2.setDouble(4, altura);
+
+        // executa
+        stmt2.execute();
+        stmt2.close();
+        
+        System.out.println("Gravado!");
+        
+		con.close();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "Seu IMC e de " + imce;
+		
+	}
+	
+	/*@GET
+	@Path("mostrar")
+	public String mostrar() {	
+	}*/
+	
+	public Connection getConnection() {
+        try {
+        	Class.forName("com.mysql.jdbc.Driver");
+            return DriverManager.getConnection(
+                    "jdbc:mysql://localhost/bdimc", "root", "cfdd4405");
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }catch (ClassNotFoundException e) {
+			e.printStackTrace();
+        }	
+        return null;
+    }
+}
+

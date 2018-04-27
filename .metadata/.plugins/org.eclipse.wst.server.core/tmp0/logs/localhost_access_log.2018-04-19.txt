@@ -36,3 +36,6 @@
 127.0.0.1 - - [19/Apr/2018:21:41:37 -0300] "GET /Exercicio2/rest/calculos/perimetro/4/3/5/3 HTTP/1.1" 200 61
 127.0.0.1 - - [19/Apr/2018:21:46:02 -0300] "GET /Exercicio2/WEB-INF/classes/br/com/rest/ex2/Calculos.java HTTP/1.1" 404 1046
 127.0.0.1 - - [19/Apr/2018:21:46:03 -0300] "GET /Exercicio2/rest/calculos/perimetro/4/3/5/3 HTTP/1.1" 200 82
+127.0.0.1 - - [19/Apr/2018:21:49:08 -0300] "GET /Exercicio2/WEB-INF/classes/br/com/rest/ex2/Calculos.java HTTP/1.1" 404 1046
+127.0.0.1 - - [19/Apr/2018:21:49:14 -0300] "GET /Exercicio2/rest/calculos/perimetro/4/3/5/3 HTTP/1.1" 200 83
+127.0.0.1 - - [19/Apr/2018:21:49:47 -0300] "GET /Exercicio2/rest/calculos/tabuada/5 HTTP/1.1" 200 120
