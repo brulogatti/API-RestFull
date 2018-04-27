@@ -27,18 +27,6 @@ public class Calculos {
 	@Path("perimetro/{param1}/{param2}/{param3}/{param4}")
 	public String perimetro(@PathParam("param1") double a, @PathParam("param2") double b, @PathParam("param3") double c, @PathParam("param4") double h) {
 		/*
-		 *        /\        |  
-		 *       /  \       |  
-		 *  b   /    \  a   |  h
-		 *     /      \     | 
-		 *    /        \    | 
-		 *    ----------    |
-		 *        c    
-		 */
-		
-		
-		
-		/*
 		 * Verificar se é um triângulo 
 		 * | b - c | < a < b + c 
 		 * | a - c | < b < a + c 
@@ -63,7 +51,7 @@ public class Calculos {
 		} else {
 			String out1 = String.valueOf(a + b + c);
 			String out2 = String.valueOf((c*h)/2);
-			return "O triangulo de lados("+a+", "+b+", "+c+ ") possui o perimetro " + out1 + " e a area " + out2;
+			return "O triangulo de lados("+a+", "+b+", "+c+ ") possui o perimetro " + out1 + " e a area " + out2 ;
 		}
 	}
 

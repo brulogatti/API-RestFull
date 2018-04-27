@@ -63,7 +63,7 @@ public class Calculos {
 		} else {
 			String out1 = String.valueOf(a + b + c);
 			String out2 = String.valueOf((c*h)/2);
-			return "O triangulo de lados("+a+", "+b+", "+c+ ") possui o perimetro " + out1 + " e a area " + out2;
+			return "O triangulo de lados("+a+", "+b+", "+c+ ") possui o perimetro " + out1 + " e a area " + out2 +"<br>x<br>"+"xxx<br>"+"xxxxx<br>"+"xxxxxxx";
 		}
 	}
 

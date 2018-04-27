@@ -1333,3 +1333,31 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:1)
 	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-26 21:09:43.258
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-04-26 21:09:43.314
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2018-04-26 21:16:01.831
+!MESSAGE Could not publish server configuration: FWK005 parse may not be called while parsing..
+!STACK 0
+org.xml.sax.SAXException: FWK005 parse may not be called while parsing.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:271)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.eclipse.jst.server.tomcat.core.internal.xml.Factory.loadDocument(Factory.java:88)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatVersionHelper.localizeConfiguration(TomcatVersionHelper.java:646)
+	at org.eclipse.jst.server.tomcat.core.internal.Tomcat90Configuration.localizeConfiguration(Tomcat90Configuration.java:708)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishServer(TomcatServerBehaviour.java:243)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:975)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3182)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:355)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-04-26 21:16:25.290
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2018-04-26 21:16:57.826
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
