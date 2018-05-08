@@ -17,7 +17,7 @@ public class Ex2Teste {
 			conn.setRequestProperty("Accept", "application/json");
 			
 			if(conn.getResponseCode()!=200) {
-				throw new RuntimeException("Failes : HTTP error code : " + conn.getResponseCode());
+				throw new RuntimeException("Failed : HTTP error code : " + conn.getResponseCode());
 			}
 			
 			BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream())));
