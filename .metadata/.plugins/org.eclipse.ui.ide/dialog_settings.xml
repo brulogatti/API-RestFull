@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/home/bruna/Documentos/Sistemas Distribuídos/P2/API Restfull/projSpring1"/>
 		<item value="/home/bruna/Downloads/Exercicio3"/>
 		<item value="/home/bruna/Documentos/Sistemas Distribuídos/P2/API Restfull/Exercicio3"/>
 		<item value="/home/bruna/Documentos/Sistemas Distribuídos/P2/API Restfull/RestExemplo1"/>
